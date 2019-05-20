@@ -1,5 +1,6 @@
 # Footroller
 HCI device using feet motion factor. 
+
 esp32 - WiFi - Python
 
 ## 苦逼的前言
@@ -13,3 +14,14 @@ esp32 - WiFi - Python
 * 一个没有输入设备的外设怎么设置连接……
   * 设备端开一个蓝牙advertisement告诉它吗…… 听起来解决方案一点都不简洁……
 * python界面 唔 要学
+
+## 整体构思
+
+* MCU ===》 PC
+  * 运动数据 （《==先做这个
+* PC ===》 MCU
+  * *休眠/节电
+* ？
+  * MCU怎么知道WiFi信息……
+    * 增加交互设备/方式 - 串口通信 - 顺便可以调一下参数
+    * 复杂的ble广告[BLE Scanner](<https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/>)
